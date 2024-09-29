@@ -2,10 +2,21 @@
     <head>
         <title>animation</title>
         <style>
+            /* The animation code */
+            @keyframes example{
+                0%{background-color: pink;}
+                25%{background-color: plum;}
+                50%{background-color: purple;}
+                100%{background-color: black;}
+            }
+            /* The element to apply the animation to*/
             div{
                 height: 200px;
                 width: 200px;
                 background-color:purple ;
+                animation-name: example ;
+                animation-duration: 4s;
+
             }
         </style>
         <body>
