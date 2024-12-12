@@ -3,14 +3,18 @@
     <body>
         <h2>error handling</h2>
         <p id="error_message"></p>
-
+<p id="result"></p>
         <script>
             try{
                 addalert("welcome guest");
             }
             catch(err){
                 document.getElementById("error_message").innerHTML =err.message
-            }
+                }
+
+                add =(a,b) => a+b;
+                document.getElementById("result").innerHTML = add(4,6);
+            
         </script>
     </body>
 </html>
